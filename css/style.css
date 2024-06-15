@@ -1,3 +1,4 @@
+/* Default (Dark Mode) Styles */
 body {
   margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
@@ -32,14 +33,14 @@ canvas {
   height: 90vh; /* Set height to allow internal scrolling */
   width: 60%; /* 60% of the width for a more focused content area */
   margin: 0 auto; /* Center the content */
-  background: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+  background: transparent; /* Fully transparent background */
   color: #ffffff; /* Primary text color */
   padding: 40px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 0; /* Remove border-radius */
   overflow-y: auto; /* Enable vertical scrolling within content */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  box-shadow: none; /* Remove shadow */
 }
 
 .content::-webkit-scrollbar {
@@ -106,4 +107,109 @@ a:hover {
 
 strong {
   color: #A9A9A9; /* Light Gray for emphasis */
+}
+
+/* Light Mode Styles */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f0f0f0; /* Light background color */
+    color: #000000; /* Dark text color */
+  }
+
+  #particles-js {
+    background-color: #f0f0f0; /* Light background color */
+  }
+
+  .content {
+    background: transparent; /* Fully transparent background */
+    color: #000000; /* Dark text color */
+    box-shadow: none; /* Remove shadow */
+  }
+
+  header .logo, h1, h2, h3 {
+    color: #3EB489; /* Mint color */
+    border-bottom-color: #3EB489;
+  }
+
+  p, ul {
+    color: #000000; /* Dark text color */
+  }
+
+  strong {
+    color: #696969; /* Dark Gray for emphasis */
+  }
+
+  a {
+    color: #1e90ff; /* Link color */
+  }
+}
+
+/* Responsive Design for Tablets and Mobile Devices */
+@media (max-width: 1024px) {
+  .content {
+    width: 80%; /* Adjust width for tablets */
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p, ul {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%; /* Adjust width for smaller tablets and large phones */
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p, ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    width: 95%; /* Adjust width for smaller phones */
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p, ul {
+    font-size: 0.8rem;
+  }
 }
