@@ -109,16 +109,16 @@ function loadParticles(color, opacity, size) {
 // Check user preference for color scheme and set particle color accordingly
 const mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
 if (mediaQuery.matches) {
-  loadParticles('#000000', 0.2, 2); // Black particles, less opacity, smaller size for light mode
+  loadParticles('#2E3944', 0.2, 2); // Dark gray particles for light mode
 } else {
-  loadParticles('#ffffff', 0.7, 4); // White particles, more opacity, larger size for dark mode
+  loadParticles('#D3D9D4', 0.7, 4); // Light particles for dark mode
 }
 
 // Listen for changes in color scheme
 mediaQuery.addListener((e) => {
   if (e.matches) {
-    loadParticles('#000000', 0.2, 2); // Black particles, less opacity, smaller size for light mode
+    loadParticles('#2E3944', 0.2, 2); // Dark gray particles for light mode
   } else {
-    loadParticles('#ffffff', 0.7, 4); // White particles, more opacity, larger size for dark mode
+    loadParticles('#D3D9D4', 0.7, 4); // Light particles for dark mode
   }
 });
