@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  overflow: hidden; /* Prevents body scrolling */
+  background-color: #0a0a0a; /* Darker background color */
+  color: #ffffff; /* Primary text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #0a0a0a; /* Darker background color */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 90vh; /* Set height to allow internal scrolling */
+  width: 60%; /* 60% of the width for a more focused content area */
+  margin: 0 auto; /* Center the content */
+  background: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
+  color: #ffffff; /* Primary text color */
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow-y: auto; /* Enable vertical scrolling within content */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.content::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers */
+}
+
+header .logo {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #3EB489; /* Mint color */
+  border-bottom: 2px solid #3EB489; /* Add an underline */
+  padding-bottom: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #3EB489; /* Mint color */
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3EB489; /* Mint color */
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #3EB489; /* Mint color */
+}
+
+p, ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff; /* Primary text color */
+}
+
+ul {
+  padding-left: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+a {
+  color: #1e90ff; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  color: #A9A9A9; /* Light Gray for emphasis */
+}
